@@ -10,17 +10,32 @@ import "swiper/css/autoplay";
 
 import { EffectCube, Pagination, Autoplay } from "swiper";
 
-import Image1 from './assets/images/mech-filter1.jpg';
-import Image2 from './assets/images/mech-filter2.jpg';
-import Image3 from './assets/images/osmos-filter1.jpg';
-import Image4 from './assets/images/osmos-filter2.jpg';
-import Image5 from './assets/images/ugol-filter1.jpg';
-import Image6 from './assets/images/ugol-filter2.jpg';
+import Image1 from './assets/images/all-items.jpg';
+import Image2 from './assets/images/two-dwarfs.jpg';
+import Image3 from './assets/images/red-dwarf1.jpg';
+import Image4 from './assets/images/grey-dwarf1.jpg';
+import Image5 from './assets/images/red-dwarf2.jpg';
+import Image6 from './assets/images/bear1.jpg';
+import Image7 from './assets/images/bear2.jpg';
+import Image8 from './assets/images/violett-bear.jpg';
+import Image9 from './assets/images/red-shoes.jpeg';
+import Image10 from './assets/images/blue-shoes.jpeg';
+import Image11 from './assets/images/beresta.jpg';
+import Image12 from './assets/images/chair.jpg';
+import Image13 from './assets/images/pillow1.jpg';
+import Image14 from './assets/images/big-board.jpg';
 
 
 const App: FC = () => {
   return (
     <>
+      <div className="boardImageDiv">
+        <img src={Image14} alt="" className="boardImage"/>
+        <div className="descriptionDiv">
+          <h1>Представляем работы мастера международного класса по рукоделию</h1>
+          <h2>Елены Белоусовой</h2>
+        </div>
+      </div>
       <Swiper
         effect={"cube"}
         grabCursor={true}
@@ -30,7 +45,7 @@ const App: FC = () => {
           shadowOffset: 20,
           shadowScale: 0.94,
         }}
-        autoplay={ { delay: 1000 } }
+        autoplay={ { delay: 1700 } }
         pagination={true}
         modules={[EffectCube, Pagination, Autoplay]}
         className="mySwiper"
@@ -48,23 +63,45 @@ const App: FC = () => {
           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
         </SwiperSlide> */}
         <SwiperSlide>
-          <img src={Image1} />
+          <img src={Image1} className="slideImage"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image2} />
+          <img src={Image2} className="slideImage"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image3} />
+          <img src={Image3} className="slideImage"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image4} />
+          <img src={Image4} className="slideImage"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image5} />
+          <img src={Image5}  className="slideImage"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image6} />
+          <img src={Image6}  className="slideImage"/>
         </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image7}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image8}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image9}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image10}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image11}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image12}  className="slideImage"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Image13}  className="slideImage"/>
+        </SwiperSlide>
+        
       </Swiper>
     </>
   );
